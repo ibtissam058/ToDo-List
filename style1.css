@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    padding-top: 3%;
+}
+
+
+.standard {
+    background-image: linear-gradient(100deg, #f1cbd7, #9371d3);
+    color: #000;
+    transition: 0.3s linear;
+    overflow: visible;
+}
+
+#header{
+    margin: 0 1rem;
+    min-height: 10vh;
+    width: 100%;
+}
+
+#header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 5rem;
+    min-height: 25vh;
+    width: 100%;
+}
+
+#title {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: pre;
+    overflow: hidden;     
+    letter-spacing: 0.20rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 480px;
+  }
+  
+  /* Animation */
+#title {
+    animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
+        animated-cursor 750ms steps(11,end) infinite;
+}
+@keyframes animated-text{
+    from{width: 0%;}
+    to{width: 480px;}
+}
+  
+@keyframes animated-cursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+}
+
+form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    background: #915f36;
+    color: white;
+    border: none;
+    padding: 10px 17px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d7b385;
+}
+
+.task-actions {
+    margin-top: 10px;
+}
+
+.container{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+h1 {
+    margin: 20px 0 30px;
+    font-size: 5rem;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#task-list {
+    margin-top: 30px;
+}
+
+.task-item {
+    background: white;
+    border-left: 5px solid;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: #000;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#task_form input,
+#task_form textarea,
+#task_form select,
+#task_form button {
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.task-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    background: #cbafd69c;
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #2d2a2a;
+    width: 700px;
+    box-sizing: border-box; 
+}
+
+.task-content {
+    flex: 1 1 auto;
+    padding-right: 30px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.task-content strong {
+    display: block;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.task-content strong.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-content p {
+    margin: 0; 
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.complete-btn, .delete-btn {
+    padding: 10px 20px;
+    min-width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    white-space: nowrap;
+    transition: background-color 0.3s; 
+    text-align: center;
+}
+
+.complete-btn {
+    background-color: #8ac7ef;
+    color: rgb(255, 255, 255);
+}
+
+.delete-btn {
+    background-color: #b350d7;
+    color: rgb(255, 255, 255);
+}
+
+.complete-btn:hover {
+    background-color: #4b85cc;
+}
+
+.delete-btn:hover {
+    background-color: #6c3b84;
+}
