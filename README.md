@@ -42,9 +42,8 @@ A **full-stack** to-do list application with user authentication, task managemen
        FOREIGN KEY (user_id) REFERENCES users(id)
    );
 
-
-   ## 📸 Screenshots
-
+   
+## 📸 Screenshots
 Here are a few screenshots of the application in action:
 
 ![Login](https://github.com/ibtissam058/ToDo-List/blob/main/Screenshots/Screenshot%202025-05-25%20222131.png?raw=true)
