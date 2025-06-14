@@ -41,3 +41,14 @@ A **full-stack** to-do list application with user authentication, task managemen
        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
        FOREIGN KEY (user_id) REFERENCES users(id)
    );
+
+
+   ## 📸 Screenshots
+
+Here are a few screenshots of the application in action:
+
+![Login](https://github.com/ibtissam058/ToDo-List/blob/main/Screenshots/Screenshot%202025-05-25%20222131.png?raw=true)
+![Signup](https://github.com/ibtissam058/ToDo-List/blob/main/Screenshots/Screenshot%202025-05-25%20222423.png?raw=true)
+![Main Page](https://github.com/ibtissam058/ToDo-List/blob/main/Screenshots/Screenshot%202025-05-25%20222655.png?raw=true)
+![Add task](https://github.com/ibtissam058/ToDo-List/blob/main/Screenshots/Screenshot%202025-05-25%20230305.png?raw=true)
+![Marked as complete](https://github.com/ibtissam058/ToDo-List/blob/main/Screenshots/Screenshot%202025-05-25%20230317.png?raw=true)
