@@ -19,7 +19,7 @@ A **full-stack** to-do list application with user authentication, task managemen
 1. **Prerequisites**:  
    - PHP 7.4+  
    - MySQL 5.7+  
-   - Web server (Apache/Nginx)  
+   - Web server (Apache)  
 
 2. **Database Setup**:  
    ```sql
